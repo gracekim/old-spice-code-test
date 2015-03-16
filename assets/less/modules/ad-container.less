@@ -1,0 +1,107 @@
+.ad-wrapper {
+	margin: 25px auto;
+	width: 965px;
+	height: 290px;
+	border: 1px solid @black;
+	position: relative;
+	z-index: @z-1;
+	overflow: hidden;
+}
+
+.moving-clouds {
+	background: url("../img/clouds.png") -100px 0 repeat-x;
+	width: 1200px;
+	height: 290px;
+	left: -80px;
+	position: absolute;
+}
+
+.ad-cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: @black;
+	opacity: .80;
+	z-index: @z-9;
+}
+
+.foreground {
+	background: url("../img/foreground.png") no-repeat bottom center;
+	width: 965px;
+	height: 300px;
+	position: absolute;
+	bottom: 0;
+	z-index: @z-2;
+}
+
+#oldspice-logo {
+	width: 110px;
+	height: 33px;
+	position: absolute;
+	display: inline;	
+	top: 115px;
+	right: 206px;
+	z-index: @z-6;
+}
+
+.tv-wrapper {
+	position: absolute;
+	bottom: -15px;
+	width: 385px;
+	height: 205px;
+	z-index: @z-10;
+	
+	.tv {
+		background: url("../img/tv.png") no-repeat center center;
+		position: relative;
+		width: 385px;
+		height: 205px;
+
+		.video-content-wrapper {
+			position: absolute;
+			bottom: 32px;
+			left: 57px;
+			width: 240px;
+			height: 0;
+			background: #000;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+
+			iframe {
+    			border-radius: 20px !important;
+			}
+		}
+	}
+}
+
+.palm-trees {
+	background: url("../img/palm-trees.png") no-repeat center center;
+	width: 622px;
+	height: 281px;
+	position: absolute;	
+	bottom: 17px;
+	left: -85px;
+	z-index: @z-8;
+}
+
+.click-sign {
+	width: 142px;
+	height: 113px;
+	position: absolute;
+	bottom: -120px;
+	right: 45px;
+	opacity: 1;
+	z-index: @z-7;
+}
+
+#oldspice {
+	display: inline;
+	width: 111px;
+	height: 29px;
+	position: absolute;
+	right: 205px;
+	bottom: 150px;
+}
